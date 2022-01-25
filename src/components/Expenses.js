@@ -4,7 +4,7 @@ import ExpenseItem from './ExpenseItem';
 function Expenses(props) {
 
     return(    
-        <div>
+        <div className = "expenses">
             {props.expenses.map((expenseItem, index) => {
               return( 
               <ExpenseItem 
