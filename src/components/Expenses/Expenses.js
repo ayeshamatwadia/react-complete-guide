@@ -8,7 +8,7 @@ const Expenses = (props) => {
         <Card className = "expenses">
             {props.expenses.map((expenseItem, index) => {
               return( 
-              <ExpenseItem 
+              <ExpenseItem key={expenseItem.title}
                 expenseItemDate = {expenseItem.date} 
                 expenseItemDescription = {expenseItem.title} 
                 expenseItemPrice = {expenseItem.amount}>
