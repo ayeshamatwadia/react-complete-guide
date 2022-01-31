@@ -1,5 +1,6 @@
 import './App.css';
 import Expenses from './components/Expenses/Expenses';
+import NewExpense from './components/NewExpenses/NewExpense';
 
 const App = () => {
 
@@ -27,7 +28,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Rendered this element !</h1>
+      <NewExpense/>
       <Expenses expenses = {expensesArray} ></Expenses>      
 
     </div>
