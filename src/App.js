@@ -26,11 +26,14 @@ const App = () => {
     },
   ];
 
+  const addExpenseEventHandler = (expense) => {
+      console.log(expense);
+  }
+
   return (
     <div className="App">
-      <NewExpense/>
+      <NewExpense onAddExpense={addExpenseEventHandler} />
       <Expenses expenses = {expensesArray} ></Expenses>      
-
     </div>
   );
 }
